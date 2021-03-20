@@ -17,6 +17,6 @@ public class CarTest {
 	@Test
 	public void testCarObjectHasColorProperty() {
 		Car car = new Car();
-		car.color;
+		String color = car.color;
 	}
 }

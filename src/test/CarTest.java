@@ -29,6 +29,6 @@ public class CarTest {
 	@Test
 	public void testCarObjectHasTankCapacityProperty() {
 		Car car = new Car();
-		String tankCapacity = car.tankCapacity;
+		Double tankCapacity = car.tankCapacity;
 	}
 }

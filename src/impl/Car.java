@@ -30,6 +30,10 @@ public class Car {
 		this.fuelState+=liters;
 	}
 	
+	public void ride(Double kilometers) {
+		
+	}
+	
 	public Double getFuelState() {
 		return fuelState;
 	}

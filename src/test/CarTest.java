@@ -19,4 +19,10 @@ public class CarTest {
 		Car car = new Car();
 		String color = car.color;
 	}
+	
+	@Test
+	public void testCarObjectHasBrandProperty() {
+		Car car = new Car();
+		String brand = car.brand;
+	}
 }

@@ -31,7 +31,9 @@ public class Car {
 	}
 	
 	public void ride(Double kilometers) {
-		
+		if(kilometers <= 0) {
+			throw new ArithmeticException("Kilometers must be positive value");
+		}
 	}
 	
 	public Double getFuelState() {

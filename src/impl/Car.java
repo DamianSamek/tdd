@@ -11,6 +11,8 @@ public class Car {
 	private Double fuelConsumption;
 	
 	private Double fuelState = 0.0;
+	
+	private Double odometer = 0.0;
 
 	public Car(String brand, String color, Double tankCapacity, Double fuelConsumption) {
 		this.brand = brand;
@@ -38,7 +40,12 @@ public class Car {
 		if(litersOfFuelNeeded > fuelState) {
 			throw new ArithmeticException("There is too few fuel in tank");
 		}
-		this.fuelState-=litersOfFuelNeeded;
+		fuelState-=litersOfFuelNeeded;
+		odometer+=kilometers;	
+	}
+	
+	public Double getOdometer() {
+		return odometer;
 	}
 	
 	public Double getFuelState() {

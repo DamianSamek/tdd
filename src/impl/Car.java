@@ -11,7 +11,10 @@ public class Car {
 	private Double fuelConsumption;
 
 	public Car(String brand, String color, Double tankCapacity, Double fuelConsumption) {
-
+		this.brand = brand;
+		this.color = color;
+		this.tankCapacity = tankCapacity;
+		this.fuelConsumption = fuelConsumption;
 	}
 
 	public String getColor() {

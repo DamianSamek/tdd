@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
@@ -42,5 +43,8 @@ public class CarTest {
 		Car car = new Car("x", "y", 70.0, 10.0);
 		car.refuel(20.0);
 		assertEquals(20.0, car.getFuelState());
+		
+		Car car2 = new Car("x", "y", 70.0, 10.0);
+		assertThrows(ArithmeticException.class, () -> car2.refuel(70.1));
 	}
 }

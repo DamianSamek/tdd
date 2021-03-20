@@ -20,6 +20,10 @@ public class Car {
 	}
 	
 	public void refuel(Double liters) {
+		Double fuelStateAfterRefuel = this.fuelState + liters;
+		if(fuelStateAfterRefuel > tankCapacity) {
+			throw new ArithmeticException("Tank capacity exceeded");
+		}		
 		this.fuelState+=liters;
 	}
 	

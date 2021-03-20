@@ -36,4 +36,11 @@ public class CarTest {
 		Car car = new Car("x", "y", 0.0, 0.0);
 		car.refuel(50.0);
 	}
+	
+	@Test
+	public void testRefuelMethodWorksProperly() {
+		Car car = new Car("x", "y", 70.0, 10.0);
+		car.refuel(20.0);
+		assertEquals(20.0, car.getFuelState());
+	}
 }

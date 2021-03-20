@@ -9,6 +9,8 @@ public class Car {
 	private Double tankCapacity;
 
 	private Double fuelConsumption;
+	
+	private Double fuelState = 0.0;
 
 	public Car(String brand, String color, Double tankCapacity, Double fuelConsumption) {
 		this.brand = brand;
@@ -19,6 +21,10 @@ public class Car {
 	
 	public void refuel(Double liters) {
 		
+	}
+	
+	public Double getFuelState() {
+		return fuelState;
 	}
 
 	public String getColor() {

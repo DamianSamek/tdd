@@ -50,4 +50,10 @@ public class CarTest {
 		Car car = new Car("x", "y", 0.0, 0.0);
 		car.ride(20.5);
 	}
+	
+	@Test
+	public void testRideMethodWorksProperly() {
+		Car car = new Car("x", "y", 70.0, 10.0);
+		assertThrows(ArithmeticException.class, () -> car.ride(-1.1));
+	}
 }

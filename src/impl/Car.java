@@ -8,4 +8,6 @@ public class Car {
 	
 	public Double tankCapacity;
 	
+	public Double fuelConsumption;
+	
 }

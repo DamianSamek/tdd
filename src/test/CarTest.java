@@ -34,6 +34,6 @@ public class CarTest {
 	@Test
 	public void testThatCarHasRefuelMethod() {
 		Car car = new Car("x", "y", 0.0, 0.0);
-		car.refuel(50);
+		car.refuel(50.0);
 	}
 }

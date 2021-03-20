@@ -16,6 +16,10 @@ public class Car {
 		this.tankCapacity = tankCapacity;
 		this.fuelConsumption = fuelConsumption;
 	}
+	
+	public void refuel(Double liters) {
+		
+	}
 
 	public String getColor() {
 		return color;

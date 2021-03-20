@@ -44,4 +44,10 @@ public class CarTest {
 		Car car3 = new Car("x", "y", 70.0, 10.0);
 		assertThrows(ArithmeticException.class, () -> car3.refuel(-20.0));
 	}
+	
+	@Test
+	public void testCarHasRideMethod() {
+		Car car = new Car("x", "y", 0.0, 0.0);
+		car.ride(20.5);
+	}
 }

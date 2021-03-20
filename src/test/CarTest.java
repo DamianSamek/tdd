@@ -53,7 +53,11 @@ public class CarTest {
 	
 	@Test
 	public void testRideMethodWorksProperly() {
-		Car car = new Car("x", "y", 70.0, 10.0);
-		assertThrows(ArithmeticException.class, () -> car.ride(-1.1));
+		Car car1 = new Car("x", "y", 70.0, 10.0);
+		assertThrows(ArithmeticException.class, () -> car1.ride(-1.1));
+		
+		Car car2 = new Car("x", "y", 50.0, 10.0);
+		car2.refuel(10.0);
+		assertThrows(ArithmeticException.class, () -> car2.ride(100.1));
 	}
 }

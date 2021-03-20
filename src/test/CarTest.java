@@ -31,4 +31,10 @@ public class CarTest {
 		Car car = new Car();
 		Double tankCapacity = car.tankCapacity;
 	}
+	
+	@Test
+	public void testCarObjectHasFuelConsumptionProperty() {
+		Car car = new Car();
+		Double fuelConsumption = car.fuelConsumption;
+	}
 }

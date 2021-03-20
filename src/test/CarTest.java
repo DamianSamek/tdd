@@ -64,5 +64,11 @@ public class CarTest {
 		car3.refuel(10.0);
 		car3.ride(90.0);
 		assertEquals(1.0, car3.getFuelState());
+		
+		Car car4 = new Car("x", "y", 50.0, 10.0);
+		car4.refuel(40.0);
+		car4.ride(350.0);
+		assertEquals(350.0, car4.getOdometer());
 	}
+	
 }

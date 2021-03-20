@@ -52,9 +52,14 @@ public class Car {
 		if (updatedDailyOdometer < 1000) {
 			dailyOdometer += kilometers;
 		} else {
+			resetDailyOdometer();
 			Double truncatedOdometer = updatedDailyOdometer - 1000.0;
-			dailyOdometer = truncatedOdometer;
+			dailyOdometer+= truncatedOdometer;
 		}
+	}
+	
+	public void resetDailyOdometer() {
+		dailyOdometer = 0.0;
 	}
 
 	public Double getDailyOdometer() {

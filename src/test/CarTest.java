@@ -13,4 +13,10 @@ public class CarTest {
 		Car car = new Car();
 		assertNotNull(car);
 	}
+	
+	@Test
+	public void testCarObjectHasColorProperty() {
+		Car car = new Car();
+		car.color;
+	}
 }

@@ -30,4 +30,10 @@ public class CarTest {
 		assertEquals(70.0, car.getTankCapacity());
 		assertEquals(10.0, car.getFuelConsumption());
 	}
+	
+	@Test
+	public void testThatCarHasRefuelMethod() {
+		Car car = new Car("x", "y", 0.0, 0.0);
+		car.refuel(50);
+	}
 }

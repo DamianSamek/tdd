@@ -20,6 +20,9 @@ public class Car {
 	}
 	
 	public void refuel(Double liters) {
+		if(liters <= 0) {
+			throw new ArithmeticException("Liters must be positive value");
+		}
 		Double fuelStateAfterRefuel = this.fuelState + liters;
 		if(fuelStateAfterRefuel > tankCapacity) {
 			throw new ArithmeticException("Tank capacity exceeded");

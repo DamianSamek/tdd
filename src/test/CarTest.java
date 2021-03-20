@@ -59,5 +59,10 @@ public class CarTest {
 		Car car2 = new Car("x", "y", 50.0, 10.0);
 		car2.refuel(10.0);
 		assertThrows(ArithmeticException.class, () -> car2.ride(100.1));
+		
+		Car car3 = new Car("x", "y", 50.0, 10.0);
+		car3.refuel(10.0);
+		car3.ride(90.0);
+		assertEquals(1.0, car3.getFuelState());
 	}
 }

@@ -34,13 +34,11 @@ public class Car {
 		if(kilometers <= 0) {
 			throw new ArithmeticException("Kilometers must be positive value");
 		}
-		
 		Double litersOfFuelNeeded = (kilometers/100.0) * fuelConsumption;
 		if(litersOfFuelNeeded > fuelState) {
 			throw new ArithmeticException("There is too few fuel in tank");
 		}
-		
-		
+		this.fuelState-=litersOfFuelNeeded;
 	}
 	
 	public Double getFuelState() {

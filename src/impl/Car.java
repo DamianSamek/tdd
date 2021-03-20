@@ -2,16 +2,32 @@ package impl;
 
 public class Car {
 
-	public String color;
+	private String color;
 
-	public String brand;
+	private String brand;
 
-	public Double tankCapacity;
+	private Double tankCapacity;
 
-	public Double fuelConsumption;
+	private Double fuelConsumption;
 
 	public Car(String brand, String color, Double tankCapacity, Double fuelConsumption) {
 
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public Double getTankCapacity() {
+		return tankCapacity;
+	}
+
+	public Double getFuelConsumption() {
+		return fuelConsumption;
 	}
 
 }

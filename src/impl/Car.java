@@ -20,7 +20,7 @@ public class Car {
 	}
 	
 	public void refuel(Double liters) {
-		
+		this.fuelState+=liters;
 	}
 	
 	public Double getFuelState() {

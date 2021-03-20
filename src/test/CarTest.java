@@ -74,6 +74,13 @@ public class CarTest {
 		car5.refuel(130.0);
 		car5.ride(1276.0);
 		assertEquals(276.0, car5.getDailyOdometer());
+		
+		Car car6 = new Car("x", "y", 200.0, 10.0);
+		car6.refuel(200.0);
+		car6.ride(1700.0);
+		assertEquals(700.0, car6.getDailyOdometer());
+		car6.resetDailyOdometer();
+		assertEquals(0.0, car6.getDailyOdometer());
 	}
 	
 }

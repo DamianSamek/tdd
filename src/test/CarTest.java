@@ -25,4 +25,10 @@ public class CarTest {
 		Car car = new Car();
 		String brand = car.brand;
 	}
+	
+	@Test
+	public void testCarObjectHasTankCapacityProperty() {
+		Car car = new Car();
+		String tankCapacity = car.tankCapacity;
+	}
 }

@@ -37,4 +37,9 @@ public class CarTest {
 		Car car = new Car();
 		Double fuelConsumption = car.fuelConsumption;
 	}
+	
+	@Test
+	public void testCarClassHasConstructorContainingFourParameters() {
+		Car car = new Car("Opel", "black", 70.0, 10.0);
+	}
 }
